@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/bej_c1_s4_spring_ioc_annotation_pc_4.1.iml" filepath="$PROJECT_DIR$/.idea/bej_c1_s4_spring_ioc_annotation_pc_4.1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sprint4.1/sprint4.1.iml" filepath="$PROJECT_DIR$/sprint4.1/sprint4.1.iml" />
+    </modules>
+  </component>
+</project>

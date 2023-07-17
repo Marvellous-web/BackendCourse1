@@ -1,0 +1,29 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <bean class="org.example.model.Cab" id="cab1">
+        <property name="cabNo" value="1234"/>
+        <property name="cabCategory" >
+            <bean class="org.example.model.CabCategory">
+                <constructor-arg value="Ola"/>
+                <constructor-arg value="99"/>
+            </bean>
+        </property>
+        <property name="cabRating" value="Good"/>
+    </bean>
+
+    <bean class="org.example.model.Cab" id="cab2">
+        <property name="cabNo" value="1234"/>
+        <property name="cabCategory" ref="category"/>
+        <property name="cabRating" value="Good"/>
+    </bean>
+    <bean class="org.example.model.CabCategory" id="category">
+        <constructor-arg value="Uber"/>
+        <constructor-arg value="125"/>
+    </bean>
+</beans>

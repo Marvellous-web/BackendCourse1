@@ -1,0 +1,16 @@
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.example.modal.Book" table="Book">
+        <id name="book_id"><generator class="identity"></generator>
+        </id>
+
+        <property name="book_name"></property>
+        <property name="book_subj"></property>
+        <property name="book_auth"></property>
+        <property name="book_price"></property>
+        <property name="book_stock"></property>
+
+    </class>
+</hibernate-mapping>

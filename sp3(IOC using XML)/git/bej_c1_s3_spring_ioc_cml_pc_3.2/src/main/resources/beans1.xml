@@ -1,0 +1,22 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+    <bean class="org.example.Commuters_Cab.ModalCommuters" id="a1" >
+
+
+        <constructor-arg  value="Prateek"  index="0"/>
+        <constructor-arg  index="1" value="Jhansi"/>
+        <constructor-arg index="2" value="1000" />
+        <constructor-arg  index="3" ref="modalcabs"/>
+    </bean>
+    <bean class="org.example.Commuters_Cab.ModalCabs" id="modalcabs" >
+        <constructor-arg value="Mercedes" index="0" />
+        <constructor-arg value="UP-93" index="1" />
+    </bean>
+</beans>
